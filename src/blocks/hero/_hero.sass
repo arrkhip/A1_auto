@@ -1,0 +1,59 @@
+/*
+ * ========================
+ * HERO
+ * ========================
+ */
+.hero 
+	padding-bottom: 60px
+
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+
+	&__info,
+	&__banner
+		width: calc(50% - 30px)
+
+	&__info
+		padding-top: 80px
+		
+	&__descr
+		margin-top: 25px
+		font-size: 20px
+		line-height: 28px
+		color: #707070
+
+	&__banner
+		line-height: 0
+
+		img 
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+
+	+width-sm
+		padding-top: 10px
+
+		&__inner
+			flex-direction: column
+
+		&__info
+			order: 1
+			width: 100%
+			padding-top: 20px
+
+		&__descr
+			margin-top: 10px
+			font-size: 18px
+			line-height: 20px
+
+		&__banner
+			width: 100%
+			max-width: 450px
+			margin: auto
+
+
+
+
