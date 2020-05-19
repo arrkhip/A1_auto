@@ -4,33 +4,45 @@
  * ========================
  */
 .hero 
-	padding-bottom: 60px
-
-	&__inner
-		display: flex
-		justify-content: space-between
-		align-items: flex-start
-
-	&__info,
-	&__banner
-		width: calc(50% - 30px)
+	height: 841px
+	padding: 104px 74px 0
+	background: url('../img/hero-bg.png') center no-repeat
+	background-size: cover
 
 	&__info
-		padding-top: 80px
+
 		
 	&__descr
-		margin-top: 25px
-		font-size: 20px
-		line-height: 28px
-		color: #707070
+		max-width: 564px
+		padding: 14px 18px 18px
+		margin-top: 33px
+		margin-bottom: 55px
+		font-weight: 500
+		font-size: 25px
+		line-height: 35px 
+		text-transform: uppercase
+		color: $black
+		background-color: $white
 
-	&__banner
-		line-height: 0
+	&__btn
 
-		img 
-			width: 100%
-			height: 100%
-			object-fit: cover
+		&-text
+			display: inline-block
+			vertical-align: middle
+			margin-right: 17px
+			border-bottom: 1px solid $white
+			font-weight: 500
+			font-size: 16px
+			line-height: 16px
+			text-transform: uppercase
+			color: $white
+
+		&-icon
+			display: inline-block
+			vertical-align: middle
+			width: 42px
+			height: 16px
+			fill: $white
 
 
 	+width-sm
